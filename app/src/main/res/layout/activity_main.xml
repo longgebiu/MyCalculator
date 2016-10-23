@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.administrator.mycalculator2.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="标准身高计算器"
+        android:textStyle="bold"
+        android:id="@+id/testView1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="102dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01">
+
+            <TextView
+                android:text="请输入你的体重"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+
+            <EditText
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText" />
+
+            <TextView
+                android:text="kg"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <TextView
+            android:text="请选择你的性别"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:gravity="center_vertical" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.00"
+            android:elevation="0dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:paddingLeft="5dp">
+
+            <RadioButton
+                android:text="男"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/man"
+                android:layout_weight="0.15"
+                android:paddingLeft="0dp" />
+
+            <RadioButton
+                android:text="女"
+                android:layout_width="28dp"
+                android:layout_height="47dp"
+                android:id="@+id/woman"
+                android:layout_weight="0.27" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="73dp">
+
+        <Button
+            android:text="运算"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_weight="0.64" />
+    </LinearLayout>
+</LinearLayout>
